@@ -3,8 +3,22 @@ function sortear() {
     let de = parseInt(document.getElementById('de').value);
     let ate = parseInt(document.getElementById('ate').value);
 
+    if(de > ate){
+        alert (`Impossivel sortear um número: pois ${de} é maior que ${ate}`);
+    }
+
     let sorteados = [];
     let numero;
+
+    if (de>= ate){
+        alert ('O campo "Do número" deve ser menor do que o campo "Ate o número"');
+        return;
+    }
+
+    if (quantidade > (ate - de + 1)) {
+        alert('Campo "Quantidade" deve ser menor ou igual ao intervalo informado no campo "Do número" até o campo "Até o número". Verifique!');
+        return;
+      }
 
     for(let i =0; i < quantidade; i++){
         numero = obterNumeroAleatorio(de, ate);
