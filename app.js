@@ -1,3 +1,4 @@
+alert ('EU ESTAREI AQUI PARA O QUE DER E VIER');
 function sortear() {
     let quantidade = parseInt(document.getElementById('quantidade').value);
     let de = parseInt(document.getElementById('de').value);
@@ -58,6 +59,6 @@ function reiniciar(){
     document.getElementById('quantidade').value = '';
     document.getElementById('de').value = '';
     document.getElementById('ate').value = '';
-    document.getElementById('resultado').innerHTML = '<label class="texto__paragrafo">Números sorteados:  nenhum até agora</label>'
+    document.getElementById('resultado').innerHTML = '<label class="texto__paragrafo">Números sorteados: Nenhum número até agora</label>'
     exibirStatusBotao();
 }
